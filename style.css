@@ -6,7 +6,7 @@ body{
 }
 
 .navbar{
-    display: block;
+    display: flex;
     height: 70px;
     border-radius: 5px;
     padding: 0%;
@@ -14,39 +14,65 @@ body{
     box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.589);
     position: sticky;
     top: 0%;
+    justify-content: space-between;
 }
 .navbar .logos{
     top: 0%;
-    display: block;
+    display: flex;
     position: relative;
-    bottom: 39px;
+    bottom: 40px;
     padding: 10px;
+    align-items: center;
 }
 .navbar .logos a{
-    height: 200px;
-    width: 250px;
-    top: 0%;
-    bottom: 15px;
-    right: 20px;
+    height: 25px;
+    width: 25px;
     margin: 20px;
+    
 }
 
 .navbar .logos img{
     position: relative;
     top: 0px;
+    transition: all 2s;
+}
+.navbar .logos img:hover{
+    transition: all 1s;
+    transform: rotate(360deg);
 }
 .navbar p{
     height: 50px;
     width: 200px;
-    margin: auto;
     position: relative;
-    top: 25px;
-    right: 20px;
+    top: 5px;
+    right: 380px;
     color: rgba(255, 255, 255, 0.418);
     text-shadow: 2px 2px 2px rgba(134, 140, 148, 0.315);
     font-style: normal;
     font-weight: bolder;
     font-family: 'Times New Roman', Times, serif;
+}
+.about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.about-me img{
+    height: 300px;
+    width: 300px;
+    border-radius: 400px;
+    border-color: black;
+}
+.about-me img:hover{
+    transition: all 5s;
+    transform: rotate(360deg);
+}
+.about-me p{
+    text-align: center;
+    font-size: larger;
+    color: rgb(90, 90, 90);
 }
 .unrel .music{
     margin: auto;
@@ -66,6 +92,10 @@ body{
     object-fit: cover;
     border-radius: 10px;
 }
+.unrel .music:hover{
+    transition: all 3s;
+    transform: scale(1.1);
+}
 .unrel .music audio{
     width: 100%;
     outline: none;
@@ -74,4 +104,8 @@ body{
     font-size: larger;
     font-weight: bolder;
     text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.295);
+}
+#player{
+    background-color: rgb(255, 255, 255);
+    color: rgb(212, 122, 122);
 }
