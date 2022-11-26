@@ -87,12 +87,11 @@ body{
 }
 .unrel .music{
     margin: auto;
-    padding: 50px;
+    padding: 20px;
     justify-content: center;
 }
 .unrel{
     margin: auto;
-    padding: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
