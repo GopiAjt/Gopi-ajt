@@ -26,3 +26,8 @@ var a = 10
 
 console.log(`value of a is ${d}`);//templet string using back tick key
 console.log("value of a is "+a);
+
+function onclick()
+{
+    document.getElementById("sub");
+}
