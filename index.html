@@ -45,12 +45,20 @@
         </div>
     </div>
     <div class="space"><hr></div>
-    <div class="contact">
-        <h1>CONTACT ME</h1>
-            <input type="email" placeholder="your email" >
-            <input type="phone" placeholder="your phone no">
-            <input type="submit" onclick="onclick()">
-            <p id="sub"></p>
+    <div class="contact-me">
+        <div class="contact">
+            <h1>CONTACT ME:</h1>
+            
+            <form action="thank.html" id="form">
+                Email: <input type="email" placeholder="your email" id="email">
+
+                Phone No: <input type="tel" placeholder="your phone no" id="phone">
+
+                <input type="submit" onclick="onclick()" id="submit">
+                    <p id="sub"></p>
+            </form>
+            <div id="error" style="color: red;"></div>
+        </div>
     </div>
     <div class="space"><hr></div>
     <div class="unrel">
